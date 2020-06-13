@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Inheritance in CSS</title>         
+<style>							/*score calculated as style tag || id || class || element */
+header.navigation p {          /*score high 0101*/
+  color: blue;
+}
+p.blurb {					/*score less 0012*/
+  color: red;
+}
+p {                         /*overwrite every rule for p */
+  color: green !important;
+}
+</style>
+</head>
+<body>
+<header class="navigation">
+  <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero soluta enim aut! Nihil nam obcaecati, fugiat sint sit libero voluptate eos incidunt odio neque cum, dignissimos aperiam, magnam nisi debitis.</p>
+</header>
+</body>
+</html>
