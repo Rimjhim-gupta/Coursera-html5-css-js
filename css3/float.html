@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Floating</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		.f{
+  			width: 50px;
+  			height: 50px;
+  			border: 1px solid black;
+		}
+		.layout{
+			width: 50%;
+			float: left;
+			padding: 10px;
+		}
+		#p1{
+			background-color: #DE0000;
+			float:left;
+		}
+		#p2{
+			background-color: #A0FFA1;
+			float:right;
+		}
+		#p3{
+			background-color: #FFABC1;
+			clear:both;
+		}
+		#p4{
+			background-color: #F0A000;
+			clear: right;
+		}
+		section{
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+	<h1>Floating Elements</h1>
+
+<div>
+  <p id="p1" class="f"></p>
+  <p id="p2" class="f"></p>
+  <p id="p3" class="f"></p>
+  <p id="p4" class="f"></p>
+  <h1>Two Layout</h1>
+  <p class="layout">Floating elements can produce very flexible layouts. Floats are taken out of their normal document flow, and they're positioned at the top left or right edge of the containing element.</p>
+  <p class="layout">Floats don't have vertical margin collapse, so previously hidden or collapsed margins will show up once you float the element. And remember that to resume normal document flow, use the clear property. Either clear left, clear right or clear both.</p>
+  <section>This is regular content continuing after the the paragraph boxes.</section>
+</div>
+</body>
+</html>
