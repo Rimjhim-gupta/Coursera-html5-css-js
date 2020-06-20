@@ -1,0 +1,83 @@
+*{
+	box-sizing: border-box;
+	position: relative;
+}
+h1{
+	font-family: Cambria, Georgia, serif;
+	text-align: center;
+}
+section{
+	font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+	background-color: lightgrey;
+	border: 1px solid black; 
+	padding: 5px;
+}
+
+@media(min-width:992px){
+	.s1,
+	.s2,
+	.s3{
+		float: left;
+	}
+	.s1{
+		width: 32%;/*as margin is not included in border-box*/
+		margin-right: 10px;
+	}
+	.s2{
+		width: 32%;
+		margin-right: 10px;
+	}
+	.s3{
+		width: 32%;
+	}
+}
+@media(min-width: 768px) and (max-width: 991px) {
+	.s1,
+	.s2,
+	.s3{
+		float: left;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+	.s1{
+		width: 45%;
+	}
+	.s2{
+		width: 45%;
+	}
+	.s3{
+		width: 100%;
+	}
+}
+@media(max-width: 767px){
+	.s1,
+	.s2,
+	.s3{
+		width: 100%;
+		float: left;
+		margin-bottom: 20px;
+	}
+}
+.p1,.p2,.p3{
+	position: absolute;
+	border: 1px solid black;
+	padding: 10px;
+	top: 0px;
+	right: 0px;
+	margin-top: 0px;
+}
+	.p1{
+	background-color: #ff45dd;
+	text-decoration-color: white;
+}
+.p2{
+	background-color: #ffac80;
+	text-decoration-color: black;
+}
+.p3{
+	background-color: #ecafef;
+	text-decoration-color: white;
+}
+.p4{
+	margin-top: 30px;
+}
