@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basics of JavaScript</title>
+	<script src="script.js"></script>
+	<script type="text/javascript">
+		console.log(x);
+	</script>
+</head>
+<body>
+	<!-- <script type="text/javascript">
+		
+	</script>
+	<script src="script.js"></script> It can be define in body as well. -->
+	<h1>Script Tag</h1>
+	A script tag is one of those tags that always requires a closing script tag, whether or not there is actually body within the script tag or not. Now, just like CSS in HTML, JavaScript code is executed sequentially.
+	<h1>Where to place Javascript</h1>
+	<ol>
+		<li>Script tag inside the head section.</li>
+		<li>Another place is an external file.An external file also starts with a script, except it has a source attribute, where you could specify an external file. And in this case, it'll be script.js because our script is sitting inside script.js. Notice that whenever you include an external JavaScript file, you still have to provide the closing script tag.</li>
+		<li> It can be define in a very similar manner as it in the head in the body as well.</li>
+	</ol> 
+	<h1>Variables</h1>
+	<p>Variable definitions should always start with the keyword var. 
+	<br>
+	No types are declared in JavaScript.The same variable can hold different types during the life of the execution of the program. </p>
+	<h1>Function</h1>
+	There are 2 syntax to declare function:-
+	<ul>
+		<li><b>function a(){...}</b></li>
+		<li><b>var a=function(){...}</b></li>
+	</ul>
+	<h1>Scope</h1>
+	<p>Everything in JavaScript is executed in an execution context. Now a function invocation creates a new execution context within which that function is executed. Now each execution context has the following. Number one, it has its own variable environment. This is where it stores its newly defined functions and variables. It also gets the special this object, which we're going to talk about at a later lecture. And what's most important for our discussion right now, it gets a reference to its outer environment. Meaning the execution environment within which this particular function is defined.
+	<br>
+	global scope does not have an outer environment simply because it's the most outer there is. So here's how scope chain works. Referenced, notice referenced, not defined, variable will be searched for in its current scope first. If not found, the outer reference will be searched. If not found there, the outer reference's outer reference will be searched and etc., and so on. If not found, the outer reference's outer reference will be searched, and etc., and so on. Now this will keep going until the global scope. If not found in global scope, the variable is going to be undefined. 
+	</p>
+	<h1>Types</h1>
+	<p>JavaScript defines seven built-in types, one object and six primitives.Object type is a collection of name value pairs.
+	A primitive type can only contain a single, immutable value. immutable means that once you set it, it cannot be changed.
+	<br>
+	A particular type called undefined among the primitives, and undefined means variable memory has been allocated, but not value has ever been explicitly set yet.
+	<br>
+	 And it's important to distinguish between that and a variable that has never been defined, in which case if you try to use it, you're going to get a reference error. And it will be a real error that will pop out in your browser console.</p>
+</body>
+</html>
