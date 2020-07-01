@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function Constructor and this keyword</title>
+	<script src="script.js"></script>
+</head>
+<body>
+	For function constructor it is neccessary to use new keyword.
+	If we forget new keyword it will show undefined because this is nothing more than a function, it's just a regular JavaScript function. So, a regular JavaScript function that you're passing 10 to, and it actually does not return anything. Well, when it doesn't return anything, this myCircle becomes undefined.
+	<br>
+	It doesn't return any value.
+	<br>
+	We don't define a function inside function constructor because this function is going to get executed every single time we create a new Circle.There is overriding of the memory space of getArea every single time we're creating a object of function constructor. So basically, that's wasted processing. It's not really wasted memory space, since it's going to put in the same memory space this function over and over again, but it's wasted processing. 
+	So we really should not be putting that inside of a function constructor.
+</body>
+</html>
