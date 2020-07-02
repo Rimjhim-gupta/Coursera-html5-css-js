@@ -61,6 +61,7 @@ if(true && "lll" && 1 && -1 && "false" ){
 
 
 // ****Best practice for {} style
+//Always apply on same line
 function a()//it will return undefined because there is curly brace in new line which means console will see there is nothing after return and put ; and due to this, it will return will executing remaining lines 
 {
 	return
